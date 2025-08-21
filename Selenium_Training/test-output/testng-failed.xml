@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day_26.SelectBox_Dropdown">
+      <class name="Day_28_POM.LogIn_Test">
         <methods>
-          <include name="launchBrowser"/>
-          <include name="CountryDropDown"/>
+          <include name="logIn"/>
         </methods>
-      </class> <!-- Day_26.SelectBox_Dropdown -->
+      </class> <!-- Day_28_POM.LogIn_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
