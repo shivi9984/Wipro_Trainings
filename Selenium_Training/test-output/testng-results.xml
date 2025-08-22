@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-21T18:50:50 IST" name="Default suite" finished-at="2025-08-21T18:50:57 IST" duration-ms="7559">
+  <suite started-at="2025-08-22T18:16:58 IST" name="Default suite" finished-at="2025-08-22T18:17:17 IST" duration-ms="18603">
     <groups>
     </groups>
-    <test started-at="2025-08-21T18:50:50 IST" name="Default test" finished-at="2025-08-21T18:50:57 IST" duration-ms="7559">
-      <class name="Day_28_POM.LogIn_Test">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Day_28_POM.LogIn_Test@7dcf94f8]" started-at="2025-08-21T18:50:50 IST" name="launchBrowser" finished-at="2025-08-21T18:50:52 IST" duration-ms="2228" status="PASS">
+    <test started-at="2025-08-22T18:16:58 IST" name="Default test" finished-at="2025-08-22T18:17:17 IST" duration-ms="18603">
+      <class name="Day_29.Alert_Boxes_Practice">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:Day_29.Alert_Boxes_Practice@229f66ed]" started-at="2025-08-22T18:16:58 IST" name="launchBrowser" finished-at="2025-08-22T18:17:04 IST" duration-ms="5840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="logIn()[pri:0, instance:Day_28_POM.LogIn_Test@7dcf94f8]" started-at="2025-08-21T18:50:52 IST" name="logIn" finished-at="2025-08-21T18:50:57 IST" duration-ms="5242" status="PASS">
+        <test-method signature="allAlerts()[pri:0, instance:Day_29.Alert_Boxes_Practice@229f66ed]" started-at="2025-08-22T18:17:04 IST" name="allAlerts" finished-at="2025-08-22T18:17:16 IST" duration-ms="12700" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logIn -->
-      </class> <!-- Day_28_POM.LogIn_Test -->
+        </test-method> <!-- allAlerts -->
+      </class> <!-- Day_29.Alert_Boxes_Practice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

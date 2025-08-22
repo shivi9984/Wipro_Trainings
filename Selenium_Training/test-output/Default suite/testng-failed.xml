@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day_28_POM.LogIn_Test">
+      <class name="Day_29.Alert_Boxes_Practice">
         <methods>
-          <include name="logIn"/>
+          <include name="simpleAlert"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- Day_28_POM.LogIn_Test -->
+      </class> <!-- Day_29.Alert_Boxes_Practice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
