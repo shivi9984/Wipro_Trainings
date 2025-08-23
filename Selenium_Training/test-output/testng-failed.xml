@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day_29.Alert_Boxes_Practice">
+      <class name="com.letskodeit.testclasses.AllCoursesTest">
         <methods>
-          <include name="simpleAlert"/>
-          <include name="launchBrowser"/>
+          <include name="setUp"/>
+          <include name="searchCourse"/>
+          <include name="tearDown"/>
+          <include name="filterByCategory"/>
         </methods>
-      </class> <!-- Day_29.Alert_Boxes_Practice -->
+      </class> <!-- com.letskodeit.testclasses.AllCoursesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
