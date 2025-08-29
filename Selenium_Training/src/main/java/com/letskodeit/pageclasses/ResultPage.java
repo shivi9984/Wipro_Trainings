@@ -6,9 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ResultPage {
+import base.BasePage;
+
+public class ResultPage extends BasePage{
 	
 	public ResultPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 	

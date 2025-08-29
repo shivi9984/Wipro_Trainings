@@ -10,9 +10,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CategoryFilterPage {
+import base.BasePage;
+
+public class CategoryFilterPage extends BasePage{
 
 	public CategoryFilterPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 	

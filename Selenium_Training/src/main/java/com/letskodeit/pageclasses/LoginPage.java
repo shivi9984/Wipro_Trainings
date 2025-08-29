@@ -4,21 +4,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LoginPage {
+import base.BasePage;
+
+public class LoginPage extends BasePage{
 	
 	public LoginPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 	
 	WebDriver driver;
-	private String LOGIN_LINK = "//a[@href='/login']";
 	private String EMAIL_FIELD = "//input[@name='email'][1]";
 	private String PASSWORD_FIELD = "login-password";
 	private String LOG_IN_BUTTON = "login"; 
 	
-	public void open() {
-		driver.findElement(By.xpath(LOGIN_LINK)).click();
-	}
 	
 	public NavigationPage signInWith(String email, String password) {
 		WebElement emailField = driver.findElement(By.xpath(EMAIL_FIELD));

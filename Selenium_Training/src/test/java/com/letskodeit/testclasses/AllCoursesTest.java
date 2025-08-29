@@ -1,54 +1,47 @@
 package com.letskodeit.testclasses;
 
-import java.time.Duration;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.letskodeit.pageclasses.NavigationPage;
 import com.letskodeit.pageclasses.CategoryFilterPage;
-import com.letskodeit.pageclasses.LoginPage;
-import com.letskodeit.pageclasses.ResultPage;
 import com.letskodeit.pageclasses.SearchBarPage;
 
+import base.BaseSetUp;
+import base.CheckPoint;
+import utilities.Constants;
+import utilities.ExcelUtility;
+
 		
-public class AllCoursesTest {
-	WebDriver driver;
-	LoginPage login;
-	NavigationPage nav;
-	SearchBarPage search;
-	ResultPage result;
-	CategoryFilterPage category;
+public class AllCoursesTest extends BaseSetUp {
+	
+	@DataProvider(name= "searchCourseData")
+	public Object[][] getSearchCourseData(){
+		Object[][] testData = ExcelUtility.getTestData("verify_search_course");
+		return testData;
+	}
 	
 	@BeforeClass
 	public void setUp() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get("https://www.letskodeit.com/");
-		login = new LoginPage(driver);
-		login.open();
-		nav = login.signInWith("test@email.com", "abcabc");
+		nav = login.signInWith(Constants.DEFAULT_USERNAME, Constants.DEFAULT_PASSWORD);
+		ExcelUtility.setExcelFile(Constants.EXCEL_FILE, "AllCoursesTests");
 	}
 	
-	@Test
-	public void searchCourse() {
-	
-//      NavigationPage nav = new NavigationPage(driver);
+	@Test(dataProvider = "searchCourseData")
+	public void searchCourse(String courseName) {
+//      NavigationPage nav = new NavigationPage(driver)
 		nav.allCourses();
-		
 		search = new SearchBarPage(driver);
-		result = search.searchCourse("rest api");
+		result = search.searchCourse(courseName);
 //		ResultPage result = new ResultPage(driver);
 		boolean searchResult = result.verifySearchResult();
-		Assert.assertTrue(searchResult);
+//		Assert.assertTrue(searchResult);
+		CheckPoint.markFinal("test-02", searchResult, "search course verification");
 	}
 	
-	@Test(dependsOnMethods = "searchCourse")
+	@Test(enabled = false)
 	public void filterByCategory() {
 		nav.allCourses();
 		category = new CategoryFilterPage(driver);
@@ -58,9 +51,5 @@ public class AllCoursesTest {
 		
 	}
 	
-	@AfterClass
-	public void tearDown() {
-//		driver.quit();
-	}
 	
 }

@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class SearchBarPage {
+import base.BasePage;
+
+public class SearchBarPage extends BasePage {
 	
 	public SearchBarPage(WebDriver driver) {
+		super(driver);
 		this.driver = driver;
 	}
 	
