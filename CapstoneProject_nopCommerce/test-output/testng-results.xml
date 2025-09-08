@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-08T13:10:42 IST" name="Default suite" finished-at="2025-09-08T13:11:55 IST" duration-ms="72533">
+    <groups>
+    </groups>
+    <test started-at="2025-09-08T13:10:42 IST" name="Default test" finished-at="2025-09-08T13:11:55 IST" duration-ms="72533">
+      <class name="testCases.Tests_NopCommerce">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:10:42 IST" name="setUp" finished-at="2025-09-08T13:10:47 IST" duration-ms="4922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerTest()[pri:1, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:10:47 IST" name="registerTest" finished-at="2025-09-08T13:11:03 IST" duration-ms="15569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="logInTest()[pri:2, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:03 IST" name="logInTest" finished-at="2025-09-08T13:11:13 IST" duration-ms="10586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInTest -->
+        <test-method signature="nopCommerceSubmodules()[pri:3, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:13 IST" name="nopCommerceSubmodules" finished-at="2025-09-08T13:11:17 IST" duration-ms="3627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nopCommerceSubmodules -->
+        <test-method signature="checkSubmodulesOfElectronicsAreVisible()[pri:4, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:17 IST" name="checkSubmodulesOfElectronicsAreVisible" finished-at="2025-09-08T13:11:22 IST" duration-ms="5262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSubmodulesOfElectronicsAreVisible -->
+        <test-method signature="verifyCellPhoneAndSelectPhone()[pri:5, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:22 IST" name="verifyCellPhoneAndSelectPhone" finished-at="2025-09-08T13:11:30 IST" duration-ms="7660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCellPhoneAndSelectPhone -->
+        <test-method signature="checkDescriptionSetQuantityAndAddressAddTocart()[pri:6, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:30 IST" name="checkDescriptionSetQuantityAndAddressAddTocart" finished-at="2025-09-08T13:11:35 IST" duration-ms="5449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkDescriptionSetQuantityAndAddressAddTocart -->
+        <test-method signature="verifyShOppingCartTestCase()[pri:7, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:35 IST" name="verifyShOppingCartTestCase" finished-at="2025-09-08T13:11:39 IST" duration-ms="3986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShOppingCartTestCase -->
+        <test-method signature="verifyCheckoutProcessTestCase()[pri:8, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:39 IST" name="verifyCheckoutProcessTestCase" finished-at="2025-09-08T13:11:55 IST" duration-ms="15202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutProcessTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Tests_NopCommerce@79079097]" started-at="2025-09-08T13:11:55 IST" name="tearDown" finished-at="2025-09-08T13:11:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.Tests_NopCommerce -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
